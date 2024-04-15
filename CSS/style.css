@@ -1,0 +1,611 @@
+body {
+    margin: 0;
+    background-color: #ffffff;
+  }
+  
+  
+  
+  /* Pagina 1 */
+  header{
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  header a{
+    color: white;
+    font-size: 30px;
+    margin-top: 1rem;
+    margin-right: 2rem;
+  }
+  .page_index {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    background-image: url(../IMGS/IMG-INICIO/Medellin_Index.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    
+
+  }
+  
+  .content-index{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    
+   
+  }
+  
+  .logo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    
+    
+    
+  }
+  
+  .logo {
+    width: 600px;
+  }
+  
+  
+  .page_index a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: flex-end;
+  
+  }
+  
+  @keyframes moviendrew {
+    0% {
+      transform: translateY(0px);
+    }
+  
+    100% {
+      transform: translateY(30px);
+    }
+  }
+  
+  .arrow{
+    animation-name: moviendrew;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    position: absolute;
+    top: 250px;
+  }
+  
+  
+  
+  
+  
+  
+  /* Pagina 2 */
+  
+  .page_two {
+    font-family: 'Montserrat', sans-serif;
+    background-image: url(../IMGS/IMG-INICIO/city_background.PNG);
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+  }
+
+  
+  .city_bg {
+    height: 100vh;
+    opacity: 10%;
+  }
+  
+  .title-dos {
+    font-family: 'Arapey', serif;
+    align-self: flex-start;
+    text-align: center;
+    font-size: 2.5rem;
+    padding-top: 6rem;
+    color: #374857;
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit
+  }
+  
+  .cards_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 8rem;
+  }
+  
+  /*CARDS*/
+  
+  .space_cards {
+    margin: 0px 60px 0px 60px;
+  }
+  
+
+  /*Miradores*/
+  
+  .card_miradores {
+    padding: 1.5rem;
+    border: 1px solid #000000;
+    border-radius: 35px;
+    text-align: center;
+    background-color: white;
+    transition: color 0.40s ease, border-color 0.40s ease, scale 0.40s ease;
+  }
+  
+  .card_miradores p {
+    font-family: ubuntu;
+    margin: 0;
+    font-size: 1.25rem;
+    line-height: 1.5;
+    color: #424242;
+  }
+  
+  .card_miradores h2 {
+    margin: 0 0 10px 0;
+  }
+  
+  .card_miradores:hover {
+    color: #00245f;
+    border-color: #004797;
+    transition: color 0.40s ease, border-color 0.40s ease, scale 0.40s ease;
+    scale: 1.2;
+  }
+  
+  .mirador_img {
+    border-radius: 25px;
+  }
+  
+  
+  /*Zonas Culturales*/
+  
+  .card_zonas_culturales {
+    padding: 1.5rem;
+    border: 1px solid #374857;
+    border-radius: 35px;
+    text-align: center;
+    background-color: #374857;
+    color: white;
+    transition: color 0.40s ease, border-color 0.40s ease, scale 0.40s ease;
+  }
+  
+  .card_zonas_culturales p {
+    font-family: ubuntu;
+    font-size: 1px;
+  }
+  
+  .card_zonas_culturales h2 {
+    margin: 0 0 10px 0;
+  }
+  
+  .card_zonas_culturales:hover {
+    color: #4e69ff;
+    border-color: #004797;
+    transition: color 0.40s ease, border-color 0.40s ease, scale 0.40s ease;
+    scale: 1.2;
+  }
+  
+  .card_zonas_culturales p {
+    margin: 0;
+    font-size: 1.25rem;
+    line-height: 1.5;
+    
+  }
+  
+  .zonacultural_img {
+    border-radius: 25px;
+  }
+  
+  
+  /*Parques*/
+  
+  .card_parques {
+    padding: 1.5rem;
+    border: 1px solid #000000;
+    border-radius: 35px;
+    text-align: center;
+    background-color: white;
+    transition: color 0.40s ease, border-color 0.40s ease, scale 0.40s ease;
+  }
+  
+  .card_parques p {
+    font-family: ubuntu;
+    font-size: 1px;
+    color: #424242;
+  }
+  
+  .card_parques h2 {
+    margin: 0 0 10px 0;
+  }
+  
+  .card_parques:hover {
+    color: #00245f;
+    border-color: #004797;
+    scale: 1.2;
+    transition: color 0.40s ease, border-color 0.40s ease, scale 0.40s ease;
+  }
+  
+  .card_parques p {
+    margin: 0;
+    font-size: 1.25rem;
+    line-height: 1.5;
+  }
+  
+  .parque_img {
+    border-radius: 25px;
+  }
+
+  
+  
+  
+  .circles {
+    display: flex;
+    justify-content: space-around;
+    margin-top: -25px;
+  }
+  
+  .circle {
+    height: 30px;
+    width: 30px;
+    border-radius: 50px;
+    scale: 2.5;
+  }
+  
+  .one {
+    background-color: #241f31;
+  }
+  
+  #logo_uno {
+    margin-top: 7px;
+  }
+  
+  .button {
+    background-color: #241f31;
+    color: #eaeaea;
+    padding: 12px;
+    border-radius: 25px;
+  
+  }
+  
+  
+  /* CURIOSIDADES */
+  
+  
+  .title-curiosities {
+  text-align: center;
+  font-size: 50px;
+  margin-bottom: 60px;
+  margin-top: 120px;
+  font-family: 'Arapey', serif;
+  font-weight: 900;
+  color: #374857;
+  }
+  
+  .content-imgs-curiosities {
+    display: flex;
+
+  }
+  .content-imgs-2{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin: 100px 80px;
+    gap: 10px;
+  }
+  
+  .content-img {
+    width: 100%;
+    height: 300px;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    color: white;
+    z-index: 1;
+    overflow: hidden; 
+
+  }
+
+  
+  .content-img p {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); 
+    color: white;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-weight: bold;
+    opacity: 0;
+    transition: opacity 0.3s;
+    font-size: 25px;
+    
+  }
+  
+  .content-img:hover p {
+    opacity: 1;
+  }
+  
+  .img-1-curiosities {
+    background-image: url(../IMGS/IMG-INICIO/bosqueurbano.jpg);
+  /*   border-radius: 25px; */
+  }
+  
+  .img-2-curiosities {
+    background-image: url(../IMGS/IMG-INICIO/ruinas.jpg);
+   /*  border-radius: 25px; */
+  }
+  
+  .img-3-curiosities {
+    background-image: url(../IMGS/IMG-INICIO/andes.jpg);
+   /*  border-radius: 25px; */
+  }
+  
+  .img-4-curiosities {
+    background-image: url(../IMGS/IMG-INICIO/plazabotero.jpg);
+/*     border-radius: 25px; */
+  }
+  
+  
+  .img-5-curiosities {
+    background-image: url(../IMGS/IMG-INICIO/climamed.jpeg);
+/*     border-radius: 25px; */
+  }
+  
+  .img-6-curiosities {
+    background-image: url(../IMGS/IMG-INICIO/natgeoo.jpg);
+    /* border-radius: 25px; */
+  }
+  
+  
+  .img-2-curiosities p{
+    display: flex;
+    justify-content: center;
+  }
+  
+  
+  /* footer */
+  p,h3 {
+    font-size: 1.5em;
+    color: #ffffff;
+    background-image: none;
+    background-color: transparent;
+    font-family: 'Arapey', serif;
+    font-size: 2rem;
+}
+
+.form label legend{
+
+    color: #ffffff;
+}
+
+.body-2{
+    font-size: 16px;
+    display: flex;
+    justify-content: left;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../IMGS/IMG-INICIO/_DSC3024_0.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+    background-attachment: fixed;
+    gap: 100px;     
+    margin: 0;
+}
+
+.contenido{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.cuerpo{
+    display: flex;
+    margin-left: 15%;
+    margin-right: 10%;
+    margin-bottom: 5%;
+    flex-direction: column;
+    align-items:left;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+
+.cajaf{
+    display: flex;
+    justify-content: center;
+
+}
+
+form{
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    text-align: center;
+
+    color: antiquewhite;
+    border-radius: 10px;
+    background: linear-gradient(rgba(252, 252, 252, 0.226), rgba(150, 130, 130, 0.5)) ;
+    gap: 0.3rem;
+    width: 100%;
+}
+.form h4{
+ font-size: 25px;
+ text-align: center;
+
+}
+
+.about h2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 2.5rem;
+    font-family: 'Arapey', serif;
+    color: white;
+  }
+
+
+.logos{
+    display: flex;
+    flex-direction: column ;
+    gap: 10%;
+    align-items: center;
+    position: relative;
+    justify-content: center;
+    background-color: #374857;
+    padding:  15px;
+}
+
+
+.boton:hover{
+    color: blue;
+
+}
+
+.contenido{
+    border-radius: 20px;
+    min-width: 30px;
+    min-height: 30px;
+}
+
+textarea{
+    border-radius: 10px;
+    border-radius: 10px;
+    border: 1px black solid;
+    padding: 3px;
+    width: 14rem;
+    height: 4rem;
+}
+.container-inputs{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+.container-inputs input{
+  border-radius: 10px;
+  border: 1px black solid;
+  padding: 5px;
+  width: 14rem;
+}
+.boton{
+  border: 21px #374857 solid;
+}
+.label{
+  font-size: 22px;
+}
+.boton-footer{
+  color: #00245f;
+  font-weight: bolder;
+}
+footer{
+  background-color: #374857;
+ 
+}
+.content-footer{
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+}
+.first-div{
+  display: flex;
+  flex-direction: column;
+  
+}
+.first-div hr{
+  margin-top: 50px;
+  background-color: aliceblue;
+  width: 100%;
+  padding: 1px;
+  
+}
+.first-div h2{
+  color: whitesmoke;
+  margin: 20px 0 20px 0;
+  font-size: 17px;
+}
+.first-div p{
+  color: #999690;
+  margin: 8px 0 8px 0;
+  font-size: 15px;
+}
+.first-div a{
+  color: #999690;
+  margin: 8px 0 8px 0;
+  font-size: 15px;
+  text-decoration: none;
+}
+.first-div a:hover{
+  color: #d6d3cd;
+  margin: 8px 0 8px 0;
+  font-size: 15px;
+  text-decoration: none;
+}
+@media(max-width: 1000px){
+  .logo{
+    width: 310px;
+  }
+  .logo-container p{
+    font-size: 11px;
+  }
+  .arrow{
+    top: 170px;
+  }
+  .cards_container{
+    display: flex;
+    flex-direction: column;
+    padding-top: 2rem;
+    gap: 25px;
+  }
+  .title-dos{
+    font-size: 2rem;
+  }
+  .content-imgs-2{
+    display: grid;
+    grid-template-columns: auto auto;
+    margin: 0;
+    margin-bottom: 78px;
+  }
+  .content-img p {
+    opacity: 1;
+    font-size: 20px;
+    
+  }
+  .contenido{
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .logos{
+    display: flex;
+    flex-direction: row;
+  }
+  .form h4{
+    font-size: 20px;
+    text-align: center;
+  }
+  .about h2{
+    text-align: center;
+  }
+  .about p{
+    text-align: center;
+  }
+  .body-2{
+    display: flex;
+    justify-content: center;
+  }
+  .content-footer{
+    display: flex;
+    flex-direction: column;
+}
+}

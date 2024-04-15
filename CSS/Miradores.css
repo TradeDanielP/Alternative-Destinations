@@ -1,0 +1,839 @@
+
+html{
+    font-size: 62.5%
+}
+
+body{
+    display: flex;
+    font-size: 16px;    
+    flex-direction: column;
+    align-items: center;
+    background-image: url(../IMGS/IMG-VIEWPOINT/city_background.PNG);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    font-family: 'Arapey', serif;
+}
+
+p,h3 {
+    font-size: 1.5em;
+    color: #000000;
+    background-image: none;
+    background-color: transparent;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Encabezado */
+
+header{
+    background-image: url(../IMGS/IMG-VIEWPOINT/panoramicamed.jpg);
+    display: flex; 
+    justify-content: space-around;
+    position:absolute; 
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    width: cover;
+    justify-items: center;
+    background-size: cover;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    border: solid black;
+    
+}
+
+    .menu{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        gap: 5%;
+        text-align: center;
+
+
+    }
+
+    .menu a{
+        color: white;
+        text-decoration: none;
+    }
+    
+    .menu a:hover{
+        color: rgb(231, 111, 13);
+        transition: all 300ms ease;
+    }
+
+/* encabezado */
+
+/* miradores */
+
+.miradores{
+    margin-top: 15rem;
+    display: flex;
+    width: 95%;
+    position: relative;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    border: swolid rgb(255, 9, 9);
+
+}
+
+.texto h1{
+    font-size: 3rem;
+}
+
+/* miradores */
+
+/* manrique manrique manrique manrique manrique manrique manrique */
+    
+        .manrique{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            border: sodlid blue;
+            width: 100%;
+            gap: 1rem;
+            min-width: none;
+            min-height: none;
+        
+        }
+
+        .file{
+            border-radius: 10px;
+            width: 100%;
+            max-width: 600px;
+            max-height: 400px;
+            min-height: 100px;
+            min-width: 200px;
+            border: solwid chartreuse;
+
+        }
+
+        .textmanrique{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            width: 100%;
+            height: 90%;
+            max-width: 500px;
+            max-height: 300px;
+            min-height:none;
+            min-width: none;    
+            border-radius: 10px;
+            border: solid  #5559d3;
+            gap: -5%;   
+            background-image: linear-gradient(rgba(0,0,0, 0.1),rgba(0,0,0, 0.3));
+        
+        }
+
+        .textmanrique h3 p{
+            margin-bottom: 0%;
+        }
+
+        .textmanrique p{
+            font-size: 95%;
+        }
+
+        /* Boton modal */ 
+
+            .boton-modalmanrique{
+                margin-bottom: 15px;
+                position: relative;
+            }
+
+            .btn-modalmanrique {
+                background-color: #ffffff;
+                padding: 40px;
+                justify-content: flex-end;
+            }
+            .boton-modalmanrique label{
+                padding: 10px 15px;
+                background-color: #5559d3;
+                color: #ffffff;
+                border-radius: 4px;
+                cursor: pointer;
+                transition: all 300ms ease;
+            }
+
+            .boton-modalmanrique label:hover{
+                background-color: #2228dd;
+            }
+            
+        /* boton modal */
+
+
+        /* Ventana modal */
+
+            #btn-modalmanrique{
+                display: none;
+            }
+            
+            .box-modal{
+                display:none;
+                width: 100%;
+                height: 100vh;
+                position: fixed;
+                top: 0; left: 0;
+                background-color: rgba(144,148,150, 0.8);
+                justify-content: center;   
+                align-items: center;
+                z-index: 100;
+            }
+            
+            #btn-modalmanrique:checked ~ .box-modal{
+                display: flex;
+            }
+            
+            .content-modal{
+                padding: 15px;
+                background-color: #fff;
+                border-radius: 10px;
+            }
+            
+            .content-modal h2{
+                margin-bottom: 5px;
+            }
+            
+            .content-modal p{
+                padding: 5px 0px;
+                border-bottom: 1px solid #ccc;
+                font-size: 90%;
+            }
+            
+            .content-modal .btn-cerrar{
+                display:flex;
+                width: 100%;
+                margin-top: 15px;
+                justify-content: flex-end;
+            }
+            
+            .content-modal .btn-cerrar label{
+                padding: 7px 10px;
+                background-color: #5559d3;
+                color: #ffffff;
+                border-radius: 4px;
+                cursor: pointer;
+                transition: all 300ms ease;
+            }
+            /* Ventana modal */
+
+            /* fotos */
+
+            .galery{
+                display: flex;
+                justify-content: center;
+                justify-items: center;
+                gap: 5px;
+                margin-bottom: 15px;
+            }
+
+            .galery img{
+                border-radius: 10px;
+            }
+
+            iframe{
+                display: flex;
+                justify-content: center;
+            }
+
+            /* fotos */
+
+            /* iconos */
+
+            .heade{
+                display: flex;
+                justify-content: space-between;
+            }
+            .icons{
+                display: flex;
+                justify-content: left;
+                align-items: center;
+                gap: 10px;
+                border-top: 10px;
+            }
+
+                .emergente-reloj{
+                    display: none;
+                    position: absolute;
+                    background-color: black;
+                    line-height: 20px;
+                    z-index: 500;
+                    text-align: center;
+                    color: #fff;
+                    font-size: 14px;
+                    padding: 5px 10px;
+                    border-radius: 5px;
+
+                }
+
+                    .señalr:hover .emergente-reloj{
+                        display: block;
+                        position: fixed;
+
+                    }
+
+                .emergente-pet{
+                    display: none;
+                    position: absolute;
+                    background-color: black;
+                    line-height: 20px;
+                    z-index: 500;
+                    text-align: center;
+                    color: #fff;
+                    font-size: 14px;
+                    padding: 5px 10px;
+                    border-radius: 5px;
+
+                }
+
+                    .señalp:hover .emergente-pet{
+                        display: block;
+                        position: fixed;
+
+                    }
+
+                .emergente-bus{
+                display: none;
+                position: absolute;
+                background-color: black;
+                line-height: 20px;
+                z-index: 500;
+                text-align: center;
+                color: #fff;
+                font-size: 14px;
+                padding: 5px 10px;
+                border-radius: 5px;
+
+            }
+
+                    .señalb:hover .emergente-bus{
+                        display: block;
+                        position: fixed;
+
+                    }
+
+            /* iconos */
+
+/* manrique manrique manrique manrique manrique manrique manrique */
+
+/* cielo cielo cielo cielo cielo cielo cielo cielo cielo cielo cielo */
+
+.cielo{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: center;
+    border: sodlid blue;
+    width: 100%;
+    gap: 1rem;
+    min-width: none;
+    min-height: none;
+
+}
+
+.file{
+    border-radius: 10px;
+    width: 100%;
+    max-width: 600px;
+    max-height: 400px;
+    min-height: 100px;
+    min-width: 200px;
+    border: solid #5559d3;;
+
+}
+
+.textmanrique{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 90%;
+    max-width: 500px;
+    max-height: 300px;
+    min-height:none;
+    min-width: none;    
+    border-radius: 10px;
+    border: solid  #5559d3;
+    gap: -5%;   
+    background-image: linear-gradient(rgba(0,0,0, 0.1),rgba(0,0,0, 0.3));
+
+}
+
+.textmanrique h3 p{
+    margin-bottom: 0%;
+}
+
+.textmanrique p{
+    font-size: 95%;
+}
+
+/* Boton modal */ 
+
+    .boton-modalcielo{
+        margin-bottom: 15px;
+        position: relative;
+    }
+
+    .btn-modalcielo {
+        background-color: #ffffff;
+        padding: 40px;
+        justify-content: flex-end;
+    }
+    .boton-modalcielo label{
+        padding: 10px 15px;
+        background-color: #5559d3;
+        color: #ffffff;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: all 300ms ease;
+    }
+
+    .boton-modalcielo label:hover{
+        background-color: #2228dd;
+    }
+    
+/* boton modal */
+
+
+/* Ventana modal */
+
+    #btn-modalcielo{
+        display: none;
+    }
+    
+    .box-modal{
+        display:none;
+        width: 100%;
+        height: 100vh;
+        position: fixed;
+        top: 0; left: 0;
+        background-color: rgba(144,148,150, 0.8);
+        justify-content: center;   
+        align-items: center;
+        z-index: 100;
+    }
+    
+    #btn-modalcielo:checked ~ .box-modal{
+        display: flex;
+    }
+    
+    .content-modal{
+        padding: 15px;
+        background-color: #fff;
+        border-radius: 10px;
+    }
+    
+    .content-modal h2{
+        margin-bottom: 5px;
+    }
+    
+    .content-modal p{
+        padding: 5px 0px;
+        border-bottom: 1px solid #ccc;
+        font-size: 90%;
+    }
+    
+    .content-modal .btn-cerrar{
+        display:flex;
+        width: 100%;
+        margin-top: 15px;
+        justify-content: flex-end;
+    }
+    
+    .content-modal .btn-cerrar label{
+        padding: 7px 10px;
+        background-color: #5559d3;
+        color: #ffffff;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: all 300ms ease;
+    }
+    /* Ventana modal */
+
+    /* fotos */
+
+    .galery{
+        display: flex;
+        justify-content: center;
+        justify-items: center;
+        gap: 5px;
+        margin-bottom: 15px;
+    }
+
+    .galery img{
+        border-radius: 10px;
+    }
+
+    iframe{
+        display: flex;
+        justify-content: center;
+    }
+
+    /* fotos */
+
+    /* iconos */
+
+    .heade{
+        display: flex;
+        justify-content: space-between;
+    }
+    .icons{
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        gap: 10px;
+        border-top: 10px;
+    }
+
+        .emergente-reloj{
+            display: none;
+            position: absolute;
+            background-color: black;
+            line-height: 20px;
+            z-index: 500;
+            text-align: center;
+            color: #fff;
+            font-size: 14px;
+            padding: 5px 10px;
+            border-radius: 5px;
+
+        }
+
+            .señalr:hover .emergente-reloj{
+                display: block;
+                position: fixed;
+
+            }
+
+        .emergente-pet{
+            display: none;
+            position: absolute;
+            background-color: black;
+            line-height: 20px;
+            z-index: 500;
+            text-align: center;
+            color: #fff;
+            font-size: 14px;
+            padding: 5px 10px;
+            border-radius: 5px;
+
+        }
+
+            .señalp:hover .emergente-pet{
+                display: block;
+                position: fixed;
+
+            }
+
+        .emergente-bus{
+        display: none;
+        position: absolute;
+        background-color: black;
+        line-height: 20px;
+        z-index: 500;
+        text-align: center;
+        color: #fff;
+        font-size: 14px;
+        padding: 5px 10px;
+        border-radius: 5px;
+
+    }
+
+            .señalb:hover .emergente-bus{
+                display: block;
+                position: fixed;
+
+            }
+
+    /* iconos */
+
+/* cielo cielo cielo cielo cielo cielo cielo cielo cielo cielo cielo */
+
+/* Cristo Cristo Cristo Cristo Cristo Cristo Cristo Cristo Cristo Cristo Cristo */
+
+.cristo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    border: sodlid blue;
+    width: 100%;
+    gap: 1rem;
+    min-width: none;
+    min-height: none;
+}
+
+.file{
+    border-radius: 10px;
+    width: 100%;
+    max-width: 600px;
+    max-height: 400px;
+    min-height: 100px;
+    min-width: 200px;
+    border: solwid chartreuse;
+
+}
+
+.textmanrique{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 90%;
+    max-width: 500px;
+    max-height: 300px;
+    min-height:none;
+    min-width: none;    
+    border-radius: 10px;
+    border: solid  #5559d3;
+    gap: -5%;   
+        
+
+}
+
+.textmanrique h3 p{
+    margin-bottom: 0%;
+}
+
+.textmanrique p{
+    font-size: 95%;
+}
+
+/* Boton modal */ 
+
+    .boton-modalcristo{
+        margin-bottom: 15px;
+        position: relative;
+    }
+
+    .btn-modalcristo {
+        background-color: #ffffff;
+        padding: 40px;
+        justify-content: flex-end;
+    }
+    .boton-modalcristo label{
+        padding: 10px 15px;
+        background-color: #5559d3;
+        color: #ffffff;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: all 300ms ease;
+    }
+
+    .boton-modalcristo label:hover{
+        background-color: #2228dd;
+    }
+    
+/* boton modal */
+
+
+/* Ventana modal */
+
+    #btn-modalcristo{
+        display: none;
+    }
+    
+    .box-modal{
+        display:none;
+        width: 100%;
+        height: 100vh;
+        position: fixed;
+        top: 0; left: 0;
+        background-color: rgba(144,148,150, 0.8);
+        justify-content: center;   
+        align-items: center;
+        z-index: 100;
+    }
+    
+    #btn-modalcristo:checked ~ .box-modal{
+        display: flex;
+    }
+    
+    .content-modal{
+        padding: 15px;
+        background-color: #fff;
+        border-radius: 10px;
+    }
+    
+    .content-modal h2{
+        margin-bottom: 5px;
+    }
+    
+    .content-modal p{
+        padding: 5px 0px;
+        border-bottom: 1px solid #ccc;
+        font-size: 90%;
+    }
+    
+    .content-modal .btn-cerrar{
+        display:flex;
+        width: 100%;
+        margin-top: 15px;
+        justify-content: flex-end;
+    }
+    
+    .content-modal .btn-cerrar label{
+        padding: 7px 10px;
+        background-color: #5559d3;
+        color: #ffffff;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: all 300ms ease;
+    }
+    /* Ventana modal */
+
+    /* fotos */
+
+    .galery{
+        display: flex;
+        justify-content: center;
+        justify-items: center;
+        gap: 5px;
+        margin-bottom: 15px;
+    }
+
+    .galery img{
+        border-radius: 10px;
+    }
+
+    iframe{
+        display: flex;
+        justify-content: center;
+    }
+
+    /* fotos */
+
+    /* iconos */
+
+    .heade{
+        display: flex;
+        justify-content: space-between;
+    }
+    .icons{
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        gap: 10px;
+        border-top: 10px;
+    }
+
+        .emergente-reloj{
+            display: none;
+            position: absolute;
+            background-color: black;
+            line-height: 20px;
+            z-index: 500;
+            text-align: center;
+            color: #fff;
+            font-size: 14px;
+            padding: 5px 10px;
+            border-radius: 5px;
+
+        }
+
+            .señalr:hover .emergente-reloj{
+                display: block;
+                position: fixed;
+
+            }
+
+        .emergente-pet{
+            display: none;
+            position: absolute;
+            background-color: black;
+            line-height: 20px;
+            z-index: 500;
+            text-align: center;
+            color: #fff;
+            font-size: 14px;
+            padding: 5px 10px;
+            border-radius: 5px;
+
+        }
+
+            .señalp:hover .emergente-pet{
+                display: block;
+                position: fixed;
+
+            }
+
+        .emergente-bus{
+        display: none;
+        position: absolute;
+        background-color: black;
+        line-height: 20px;
+        z-index: 500;
+        text-align: center;
+        color: #fff;
+        font-size: 14px;
+        padding: 5px 10px;
+        border-radius: 5px;
+
+    }
+
+            .señalb:hover .emergente-bus{
+                display: block;
+                position: fixed;
+
+            }
+
+    /* iconos */
+
+/* Cristo Cristo Cristo Cristo Cristo Cristo Cristo Cristo Cristo Cristo Cristo */
+
+.contacto{
+        margin-top: 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        border: solid rgb(255, 255, 255);
+        border-radius: 10px;
+        width: 70%;
+        gap: 1rem;
+        padding: 10px;
+        min-width: none;
+        min-height: none;
+        background-image: linear-gradient(rgba(0,0,0, 0.5),rgba(0,0,0, 0.5));
+}
+
+.textomapa{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+
+
+
+
+/* footer */
+
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    bottom: 0%;
+    width: 90%;
+    text-align: center;
+    text-decoration: none;
+}
+
+footer img{
+    width: 130px;
+    height: 50px;
+}
+
+footer a:hover{
+    color: #2228dd;
+    transition: all 300ms ease;
+
+}

@@ -1,0 +1,577 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+  list-style: none;
+}
+
+
+
+/* Header */
+
+
+.menu {
+  max-width: 100%;
+  margin: 0 auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  z-index: 1000;
+}
+
+.logo {
+  width: 15rem;
+}
+
+.menu .navbar ul li {
+  position: relative;
+  float: left;
+}
+
+.menu .navbar ul li a {
+  padding: 0.3rem 1rem;
+  font-size: 2rem;
+  color: white;
+  display: block;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: background-color 1s ease;
+}
+
+.menu .navbar ul li a:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
+  transition: background-color 1s ease;
+}
+
+.menu .navbar ul li a:not(:hover) {
+  background-color: transparent;
+}
+
+#menu {
+  display: none;
+}
+
+.menu-icon {
+  width: 4rem;
+}
+
+.menu label {
+  cursor: pointer;
+  display: none;
+}
+
+
+
+
+
+/* background image */
+
+.plantas {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  filter: brightness(0.3);
+  z-index: -1;
+}
+
+
+
+/* Title Main "Parks" */
+
+.title_main {
+  font-family: 'Quride', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 10rem;
+  padding: 10rem;
+}
+
+.text_main {
+  color: #e2dfdf;
+  letter-spacing: 0.6rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+  position: relative;
+}
+
+.text_main::before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  height: 2px;
+  background: #ffffff;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.7s;  
+}
+
+.text_main:hover::before {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+
+
+
+/* PARKS */
+
+
+
+/*   First */
+
+.info_one {
+  display: flex;
+  align-items: center;
+  color: white;
+  text-align: center;
+}
+
+.text_one {
+  padding: 0 160px 0 0px;
+}
+
+.pdr_list{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.imgs_one {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+
+.slider-container_one {
+  display: flex;
+  position: absolute;
+  width: 400px;
+  height: 300px;
+  margin-right: 20px;
+  border-radius: 25px;
+  overflow-x:scroll;
+  scroll-snap-type: x mandatory;
+  white-space: nowrap;
+}
+
+.slider-container_one img {
+  object-fit: cover;
+  scroll-snap-align: start;
+  min-width: 100%;
+  max-width: 100%;
+  min-height: 100%;
+  max-height: 100%;
+}
+
+.slider_one{
+  display: flex;
+  flex-direction: row;
+}
+
+.slider-container_one::-webkit-scrollbar {
+  width: 12px;
+}
+
+.slider-container_one::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.slider-container_one::-webkit-scrollbar-thumb {
+  background: #ffffff; 
+  border-radius: 4px;
+}
+
+.slider-container_one::-webkit-scrollbar-thumb:hover {
+  background: #545454; 
+}
+
+
+
+
+
+/*   Second */
+
+.imgs_two {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+
+.slider-container_two {
+  display: flex;
+  position: absolute;
+  width: 400px;
+  height: 300px;
+  margin-left: 20px;
+  border-radius: 25px;
+  overflow-x:scroll;
+  scroll-snap-type: x mandatory;
+  white-space: nowrap;
+}
+
+.slider-container_two img {
+  object-fit: cover;
+  scroll-snap-align: start;
+  min-width: 100%;
+  max-width: 100%;
+  min-height: 100%;
+  max-height: 100%;
+}
+
+.slider_two{
+  display: flex;
+  flex-direction: row;
+}
+
+.slider-container_two::-webkit-scrollbar {
+  width: 12px;
+}
+
+.slider-container_two::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.slider-container_two::-webkit-scrollbar-thumb {
+  background: #ffffff; 
+  border-radius: 4px;
+}
+
+.slider-container_two::-webkit-scrollbar-thumb:hover {
+  background: #545454; 
+}
+
+.info_two {
+  display: flex;
+  align-items: center;
+  color: white;
+  text-align: center;
+}
+
+.text_two {
+  padding: 0px 0px 0 160px;
+}
+
+.arvi_list{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+
+/*    Third   */
+
+.info_three {
+  display: flex;
+  align-items: center;
+  color: white;
+  text-align: center;
+}
+
+.text_three {
+  padding: 0 160px 0 0px;
+}
+
+.jb_list{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.imgs_three {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+
+.slider-container_three {
+  display: flex;
+  position: absolute;
+  width: 400px;
+  height: 300px;
+  margin-right: 20px;
+  border-radius: 25px;
+  overflow-x:scroll;
+  scroll-snap-type: x mandatory;
+  white-space: nowrap;
+}
+
+.slider-container_three img {
+  object-fit: cover;
+  scroll-snap-align: start;
+  min-width: 100%;
+  max-width: 100%;
+  min-height: 100%;
+  max-height: 100%;
+}
+
+.slider_three {
+  display: flex;
+  flex-direction: row;
+}
+
+.slider-container_three::-webkit-scrollbar {
+  width: 12px;
+}
+
+.slider-container_three::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.slider-container_three::-webkit-scrollbar-thumb {
+  background: #ffffff; 
+  border-radius: 4px;
+}
+
+.slider-container_three::-webkit-scrollbar-thumb:hover {
+  background: #545454; 
+}
+
+
+/* MAPS */
+
+
+.maps_container {
+  display: flex;
+  justify-content: center;
+  padding: 0 0 4rem 0;
+  border-radius: 2.5rem;
+}
+
+.title_maps{
+  font-size: 4rem;
+  padding: 2rem;
+}
+
+.maps h2 {
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+}
+
+.Parques_del_rio, .Arvi, .Jardin_botanico {
+  margin: 3rem;
+  box-shadow: 0 0 100px rgba(255, 255, 255, 40%);
+  border-radius: 2.5rem;
+  transition: scale 0.5s;
+}
+
+iframe{
+  width: 30rem;
+  height: 30rem;
+  border-radius: 0 0 2.5rem 2.5rem;
+  object-fit: contain;
+}
+
+
+.Parques_del_rio:hover, .Arvi:hover, .Jardin_botanico:hover{
+  scale: 1.1;
+  transition: scale 0.5s;
+}
+
+
+
+
+/* Footer */
+
+.logos{
+    display: flex;
+    flex-direction: row;
+    gap: 10%;
+    position: relative;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 50%);
+    border-top: 2px solid rgba(255, 255, 255, 50%);
+    padding: 15px;
+}
+
+.fb img {
+  filter: grayscale(100%);
+}
+.fb img:hover {
+  filter: none;
+}
+
+
+.wpp img {
+  filter: grayscale(100%);
+}
+.wpp img:hover {
+  filter: none;
+}
+
+
+.ig img {
+  filter: grayscale(100%);
+}
+.ig img:hover {
+  filter: none;
+}
+
+
+.yt img {
+  filter: grayscale(100%);
+}
+.yt img:hover {
+  filter: none;
+}
+
+
+
+
+/* Responsive Elements */
+
+@media (max-width: 991px) {
+
+  .menu {
+    top: 0;
+  }
+
+  .menu label {
+    display: initial;
+  }
+
+  .menu .navbar {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.20);
+    display: none;
+  }
+
+  .menu .navbar ul li a {
+    font-size: 1.38rem;
+  }
+
+  .navbar_list {
+    display: flex;
+  }
+  
+  #menu:checked~.navbar {
+    display: initial;
+  }
+
+  .plantas {
+    object-fit: cover;
+  }
+
+  header {
+    min-height: 0vh;
+  }
+
+  .title_main{
+    font-size: 3rem;
+    padding: 8rem 0 0 0;
+  }
+
+
+
+  
+  .info_one {
+    padding: 0 0 0 1rem;
+  }
+
+  .img_one {
+    width: 8rem;
+  }
+
+  .slider-container_one {
+    width: 14rem;
+    height: 10rem;
+    border-radius: 1rem;
+  }
+
+  .text_one {
+    font-size: 0.8rem;
+    padding: 0 9rem 0 0;
+  }
+
+
+
+  
+  .info_two {
+    padding: 0 1rem 0 0;
+  }
+
+  .img_two {
+    width: 8rem;
+  }
+
+  .slider-container_two {
+    width: 14rem;
+    height: 10rem;
+    border-radius: 1rem;
+  }
+
+  .text_two {
+    font-size: 0.8rem;
+    padding: 0 0 0 9rem;
+  }
+
+  
+
+  .info_three {
+    padding: 0 0 0 1rem;
+  }
+
+  .img_three {
+    width: 8rem;
+  }
+
+  .slider-container_three {
+    width: 14rem;
+    height: 10rem;
+    border-radius: 1rem;
+  }
+
+  .text_three {
+    font-size: 0.8rem;
+    padding: 0 9rem 0 0;
+  }
+
+
+  .maps_container{
+    font-size: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    
+  }
+
+  .title_maps{
+    font-size: 2rem;
+  }
+
+  
+  .Parques_del_rio, .Arvi, .Jardin_botanico {
+    border-radius: 1rem;
+  }
+
+  iframe{
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem;
+  }
+
+  
+}
